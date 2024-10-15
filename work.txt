@@ -1,0 +1,77 @@
+npx prisma migrate dev --name init
+
+-----------------------------------------------------------------------------------------------------------------
+
+28/08/2024
+--> Savegarder les données du projets dans la base de donnée
+
+chaque projet a un ou plusieurs membres, et comme aussi un membre peu appartenir 
+a un plusieurs projets
+
+TODO :
+    - Il va falloir sauvegarder les projets a part sans la liste des membres de ce projet
+    - créer une base de donnée qui va contenir les membres et les projets dans lesquels ceci sont 
+    liés
+    - cette base de donnée ne va contenir que les Id des differentes entitées
+    - cela veux dire dans la base de donnée des membres il n'auras plus de references au projet
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+29/08/2024
+--> Les operation de modification de et de suppression des données de la base de donnée.
+
+On doit etre capable de modifier les informations du projet.
+le but c'est de le faire quand on est deja dans le projet.
+Par contre on doit etre capable de supprimer le projet depuis la page principale de l'utilisateur. Celle ou tous les 
+projets de l'utilisateur loguer sont visible.
+
+la seul personne capable de voir tous les projet c'est le proprio.
+
+TODO : 
+    - il faut ajouter un menu optionnel. Il doit contenir 3 ou deux actions principales (ouvrir, supprimer le projet)
+    - on doit etre capable de visualiser le contenu d'un projet.
+
+tout bien reflechis, je trouve mieux de mettre directement le bouton suppression sur le projet, 
+je suis en manque d'idée
+
+
+------------------------------------------------------------------------------------------------------------------
+
+30/08/2024
+--> Les grandes lignes de la console utilisateur doivent etre ecrite aujourd'hui.
+
+La partie de l'application qui affiche le projet, qui permet de gerer les informations dans le projet, commencera aujourd'hui
+
+Cette partie a beaucoup de chose a faire. 
+
+je sens que cette journée va se faire en plusieurs jours😀😁
+
+TODO : 
+    - La creation d'une navigation ( barre de navigation ). Elle est universelle au projet. elle va contenir les memes ongles.
+        -> le bouton qui permet de switcher entre les projets
+        -> le lein pour faire un schema
+        -> le bouton pour voir le contenu
+        -> le lien pour avoir acces a tous les medias ou assets
+        -> et une page d'accueil
+        -> le lien pour les paramettre du projet. dans cette endroit comme dit plus haut, nous allons permettre a utilisateur de changer 
+        les informations du projet ou de supprimer le projet. il aura aussi la possibiliter de ajouter et d'enlever un utilisateur dans 
+        projet si celui-ci a le role d'admin.
+        -> un lien pour les paramettre de l'utilisateur (profils)
+        un lien pour les taches dans le projet puisque c'est un projet d'equipe.
+
+
+-----------------------------------------------------------------------------------------------------------------------
+
+01/09/2024
+--> it's clear now that i have taked one day of recreation.
+
+today we have to create a complet navigation bar like the first but schema and content, because that two one 
+will use the same kind of navigation bar. it's will be similar to the precedent one.
+
+TODO : 
+    - Faire une nouvelle barre de navigation a l'exemple de la precedente.
+
+NB : il faut noter que pour le cote optimisation du code, je vais voir cela apres, surtout les bonnes pratiques de developpement
+    je ne vais pas chercher a me casser la tete maintenant quand le projet n'est pas encore fini au niveau fonctionnel.

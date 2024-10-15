@@ -1,0 +1,37 @@
+[
+	{
+		"Id": "b763e05b-a63e-461d-b6ca-1c10ebb35f62",
+		"name": "GeniusOfDigital",
+		"description": "le gestionnaire des content Firebase de la GeniusOfDigital, il consiste a gérer les contenu blogs et messages de la plateforme",
+		"createdBy": {
+			"userId": "25d2ab3d-1dec-45a0-80d1-0c40d5e7c22c",
+			"userName": "Daniel Seppo Eke",
+			"userRole": "owner"
+		},
+		"createdAt": "2024-08-29T01:41:33.377Z",
+		"firebaseConfig": {
+			"apiKey": "AIzaSyAFytT0lUnceAI_WP3Bx3D21KEKoR2l1jw",
+			"authDomain": "geniusofdigital-e3dad.firebaseapp.com",
+			"projectId": "geniusofdigital-e3dad",
+			"storageBucket": "geniusofdigital-e3dad.appspot.com",
+			"messagingSenderId": "645452793568",
+			"appId": "1:645452793568:web:ec228cae4c10c97ab43285"
+		},
+		"lastUpdatedBy": [
+			{
+				"users": "25d2ab3d-1dec-45a0-80d1-0c40d5e7c22c",
+				"updatedAt": "2024-08-29T01:41:33.377Z"
+			}
+		],
+		"projectId": "geniusofdigital-e3dad",
+		"updatedAt": "2024-08-29T01:41:33.377Z",
+		"membre_nbre": 1,
+		"membres": [
+			{
+				"userId": "25d2ab3d-1dec-45a0-80d1-0c40d5e7c22c",
+				"userName": "Daniel Seppo Eke",
+				"userRole": "owner"
+			}
+		]
+	}
+]
