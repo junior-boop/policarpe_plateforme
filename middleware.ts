@@ -7,6 +7,7 @@ const protectedRoutes = ["/dashboard", "/dashboard/user_"];
 const publicRoutes = ["/signin", "/"];
 
 export default async function middleware(req: NextRequest) {
+  console.log("je suis le middleware");
   const requestAuteur = await fetch(`${process.env.SERVER_URL}/auteurs`, {
     cache: "no-cache",
   });
@@ -21,6 +22,7 @@ export default async function middleware(req: NextRequest) {
   const session = cookie !== undefined ? await decrypt(cookie) : undefined;
 
   // 5. Redirect to /login if the user is not authenticated
+  console.log(isProtectedRoute);
   if (isProtectedRoute && !session?.userId) {
     return NextResponse.redirect(new URL("/signin", req.nextUrl));
   }
@@ -31,6 +33,7 @@ export default async function middleware(req: NextRequest) {
     session?.userId &&
     !req.nextUrl.pathname.startsWith("/dashboard")
   ) {
+    console.log(auteurs);
     if (auteurs.data.length === 0) {
       return NextResponse.redirect(new URL("/signup", req.nextUrl));
     }

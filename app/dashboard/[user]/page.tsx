@@ -22,7 +22,7 @@ export default function Apercu() {
         setCount(results.data)
 
         const liste = []
-        for (let i = 0; i < 10; i++) {
+        for (let i = 0; i < 20; i++) {
             liste.push(results.lock.data[i])
         }
         setLock(liste)

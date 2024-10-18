@@ -1,5 +1,5 @@
 import { Articles } from "@/types/general"
-import ArticlesEditor from "../../components/AriclesEditor"
+import PodcastEditor from '../../components/podcastEditor'
 
 
 async function getRubrique() {
@@ -20,7 +20,7 @@ export default async function ArticlesPage({ params }: { params: { articleID: st
     const articles = await getArticles(params.articleID)
     return (
         <div className="h-dvh overflow-hidden">
-            <ArticlesEditor data={{ rubrique }} articles={articles} />
+            <PodcastEditor data={{ rubrique }} articles={articles} />
         </div>
     )
 }

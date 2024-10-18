@@ -62,6 +62,35 @@ export interface Articles {
   images?: imageData;
 }
 
+export interface Audio {
+  ID?: string;
+  name: string;
+  format: string;
+  taille: number;
+  createdAt: Date;
+  metadata: string;
+  url: string;
+  Podcast: Podcasts[];
+  PodcastDraft: Podcasts[];
+}
+
+export interface Podcasts {
+  ID?: string;
+  titre: string;
+  slug: string;
+  contenu: string;
+  image: string;
+  audioID: string;
+  auteurID: string;
+  createdAt?: string;
+  updatedAt?: string;
+  podcastID?: string;
+  Auteur?: Auteur;
+  audio?: Audio;
+  podcast?: Podcasts;
+  images?: imageData;
+}
+
 export interface ApiResponse {
   message: string;
   data: User[];
